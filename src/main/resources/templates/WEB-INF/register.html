@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <script th:src="@{/js/register.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+<div>
+    <div><label> User Name : <input type="text" id="username"/> </label></div>
+    <div><label> Password: <input type="password" id="password"/> </label></div>
+    <div><label> ФИО : <input type="text" id="name"/> </label></div>
+    <div><label> phone number : <input type="text" id="phoneNumber"/> </label></div>
+    <div><label> Email: <input type="email" id="email"/> </label></div>
+    <div><button onclick="Send()" class="ast">Sign Up</button></div>
+    <div id="error"/>
+</div>
+<h2><a href="/login">Sign in</a></h2>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Appointment</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script th:src="@{/js/appointment.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body onload="checkGet();">
+<div id="div">
+    <h2> Your Appointment</h2>
+    <div>
+        <h3> Pet:</h3>
+        <h4>Owner:</h4>
+        <span th:text="${ap.getUsername()}"/>
+        <h4>Pet's name:</h4>
+        <span th:text="${ap.getName()}"/>
+        <h4>Type:</h4>
+        <span th:text="${ap.getType()}"/>
+        <h4>Breed:</h4>
+        <span th:text="${ap.getBreed()}"/>
+        <h4>Gender:</h4>
+        <span th:text="${ap.getGender()}"/>
+        <h4>Bday:</h4>
+        <span th:text="${ap.getBday}"/>
+        <h4>Age:</h4>
+        <span th:text="${ap.getAge}"/>
+    </div>
+    <div>
+        <h3> Doctor:</h3>
+        <span th:text="${ap.getDoctorname()}"/>
+    </div>
+    <div>
+        <h3> Appointment:</h3>
+        <h4>Date:</h4>
+        <span th:text="${ap.getDate()}"/>
+        <h4>Weight:</h4>
+        <span th:text="${ap.getWeight()}"/>
+        <h4>Temperature:</h4>
+        <span th:text="${ap.getTemp()}"/>
+        <h4>Disease history:</h4>
+        <span th:text="${ap.getHistory()}"/>
+        <h4>Anamnesis:</h4>
+        <span th:text="${ap.getAnamnesis()}"/>
+        <h4>Complaints:</h4>
+        <span th:text="${ap.getComplaints()}"/>
+        <h4>Condition at the time of inspection:</h4>
+        <span th:text="${ap.getCondition()}"/>
+        <h4>Diagnostic procedures:</h4>
+        <span th:text="${ap.getDiagnostics()}"/>
+        <h4>Preliminary diagnosis:</h4>
+        <span th:text="${ap.getDiagnosis()}"/>
+        <h4>Purpose:</h4>
+        <span th:text="${ap.getPurpose()}"/>
+    </div>
+</div>
+</body>
+</html>
