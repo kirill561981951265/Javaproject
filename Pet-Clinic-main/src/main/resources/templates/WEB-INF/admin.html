@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script th:src="@{/js/admin.js}"></script>
+    <script th:src="@{/js/register.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body onload="getUsers();">
+<div id="div">
+    <div id="form">
+        <h3>Add doctor:</h3>
+        <div><label> User Name : <input type="text" id="username"/> </label></div>
+        <div><label> Password: <input type="password" id="password"/> </label></div>
+        <div><label> ФИО : <input type="text" id="name"/> </label></div>
+        <div><label> phone number : <input type="text" id="phoneNumber"/> </label></div>
+        <div><label> Email: <input type="email" id="email"/> </label></div>
+        <div><button onclick="add();" class="ast">Add</button></div>
+        <div id="error"/>
+    </div>
+    <div>
+        <h2>All users:</h2>
+    <div id="users"></div>
+    </div>
+</div>
+</body>
+</html>

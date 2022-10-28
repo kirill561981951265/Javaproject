@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script th:src="@{/js/userDoctor.js}"></script>
+    <script th:src="@{/js/doctor.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body onload="getUser(2);">
+<div id="div">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="ml-left">
+            <a class="navbar-brand" href="/">Home</a>
+            <span class="username" id="name"></span>
+        </div>
+        <div class="mi-auto">
+            <button class="but" onclick="visProfile();">Profile</button>
+            <button class="but" onclick="visPets();">Pets</button>
+            <button class="but" onclick="singOut();">Sing out</button>
+        </div>
+    </nav>
+    <div id="divProfile">
+        <h2>Your profile</h2>
+        <h3>Data change:</h3>
+        <label>Userame:</label><br/>
+        <span id="username"></span><br/>
+        <label>Phone number:</label><br/>
+        <input type="text" id="phoneNumber"/><br/>
+        <label>Email:</label><br/>
+        <input type="email" id="email"/><br/>
+        <button onclick="Save(2)" class="ast">Save</button><br/>
+        <span id="mesP"/>
+    </div>
+    <div id="divPets">
+        <div>
+            <h3>Search pets</h3>
+            <label>Owner's FIO:</label></br>
+            <input type="text" id="fio" list="character"/>
+            <datalist id="character"></datalist><br>
+            <button onclick="search()" class="ast">Search</button>
+        </div>
+        <div id="searchRes"></div>
+        <div id="historyPet"></div>
+    </div>
+</div>
+</body>
+</html>

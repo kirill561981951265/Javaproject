@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Add Appointment</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script th:src="@{/js/appointment.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body onload="load();">
+<div id="div">
+<h3>Add Appointment</h3>
+<form th:object="${ap}" onsubmit="return false">
+    <input type="hidden" th:field="*{idDoctor}" id="idDoctor"/>
+    <input type="hidden" th:field="*{idPet}" id="idPet"/>
+    <label>Weight:</label><br>
+    <input type="number" step="0.1" min="1" max="30" th:field="*{weight}" id="weight"/><br>
+    <label>Temperature:</label><br>
+    <input type="number" step="0.1" min="35" max="40" th:field="*{temp}" id="temp"/><br>
+    <label>Disease history:</label><br>
+    <textarea maxlength="400" rows="10" cols="40" th:field="*{history}" id="history"/><br>
+<label>Anamnesis:</label><br>
+    <textarea maxlength="400" rows="10" cols="40" th:field="*{anamnesis}" id="anamnesis"/><br>
+    <label>Customer complaints:</label><br>
+    <textarea maxlength="200" rows="10" cols="40" th:field="*{complaints}" id="complaints"/><br>
+    <label>Condition at the time of inspection:</label><br>
+    <textarea maxlength="400" rows="10" cols="40" th:field="*{condition}" id="condition"/><br>
+    <label>Diagnostic procedures:</label><br>
+    <textarea maxlength="200" rows="10" cols="40" th:field="*{diagnostics}" id="diagnostics"/><br>
+    <label>Preliminary diagnosis:</label><br>
+    <textarea maxlength="200" rows="10" cols="40" th:field="*{diagnosis}" id="diagnosis"/><br>
+    <label>Purpose:</label><br>
+    <textarea maxlength="400" rows="10" cols="40" th:field="*{purpose}" id="purpose"/><br>
+    <div id="error"/>
+</form>
+<button onclick="add();" class="ast">Add</button>
+</div>
+</body>
+</html>
