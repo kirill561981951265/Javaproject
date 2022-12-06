@@ -1,9 +1,9 @@
 package by.kir.spring_lr2.mapping;
 
+import by.kir.spring_lr2.repository.UserRep;
 import by.kir.spring_lr2.dto.PetOutDto;
 import by.kir.spring_lr2.dto.PetRegistrDto;
 import by.kir.spring_lr2.model.Pet;
-import by.kir.spring_lr2.repository.UserRep;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

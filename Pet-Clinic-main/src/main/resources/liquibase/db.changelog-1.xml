@@ -255,69 +255,8 @@
         </addColumn>
     </changeSet>
 
-    <changeSet id="1.0.13" author="tukai">
-        <addColumn tableName="appointments">
-        <column name="history" type="VARCHAR(400)"></column>
-    </addColumn>
-        <addColumn tableName="appointments">
-            <column name="anamnesis" type="VARCHAR(400)"></column>
-        </addColumn>
-        <addColumn tableName="appointments">
-            <column name="complaints" type="VARCHAR(200)"></column>
-        </addColumn>
-        <addColumn tableName="appointments">
-            <column name="condition" type="VARCHAR(200)"></column>
-        </addColumn>
-        <addColumn tableName="appointments">
-            <column name="diagnostics"   type="VARCHAR(200)"></column>
-        </addColumn>
-        <addColumn tableName="appointments">
-            <column name="diagnosis"   type="VARCHAR(200)"></column>
-        </addColumn>
-        <addColumn tableName="appointments">
-            <column name="purpose"   type="VARCHAR(400)"></column>
-        </addColumn>
-    </changeSet>
-    <changeSet id="1.0.14" author="tukai">
-        <dropColumn tableName="appointments">
-            <column name="date"></column>
-        </dropColumn>
-    </changeSet>
-    <changeSet id="1.0.15" author="tukai">
-        <dropColumn tableName="appointments">
-            <column name="complaints"></column>
-        </dropColumn>
-    </changeSet>
-    <changeSet id="1.0.16" author="tukai">
-        <addColumn tableName="appointments">
-            <column name="complaintsC" type="VARCHAR(200)"></column>
-        </addColumn>
-    </changeSet>
-    <changeSet id="1.0.17" author="tukai">
-        <dropColumn tableName="appointments">
-            <column name="condition"></column>
-        </dropColumn>
-    </changeSet>
-    <changeSet id="1.0.18" author="tukai">
-    <addColumn tableName="appointments">
-        <column name="conditionC" type="VARCHAR(200)"></column>
-    </addColumn>
-</changeSet>
-    <changeSet id="1.0.19" author="tukai">
-        <dropColumn tableName="appointments">
-            <column name="conditionC"></column>
-        </dropColumn>
-    </changeSet>
-    <changeSet id="1.0.20" author="tukai">
-        <addColumn tableName="appointments">
-            <column name="conditionC" type="NVARCHAR(200)"></column>
-        </addColumn>
-    </changeSet>
-    <changeSet id="1.0.21" author="tukai">
-        <dropColumn tableName="appointments">
-            <column name="conditionC"></column>
-        </dropColumn>
-    </changeSet>
+
+
     <changeSet id="1.0.22" author="tukai">
         <addColumn tableName="appointments">
             <column name="conditionC" type="VARCHAR(400)"></column>

@@ -1,13 +1,13 @@
 package by.kir.spring_lr2.rest;
 
-import by.kir.spring_lr2.aop.LogAnnotation;
-import by.kir.spring_lr2.dto.AppointmentInfoDto;
-import by.kir.spring_lr2.dto.NewAppointment;
-import by.kir.spring_lr2.dto.ResponseDto;
 import by.kir.spring_lr2.exceptions.AppointmentException;
 import by.kir.spring_lr2.exceptions.PetException;
 import by.kir.spring_lr2.exceptions.UserException;
 import by.kir.spring_lr2.service.AppointmentService;
+import by.kir.spring_lr2.aop.LogAnnotation;
+import by.kir.spring_lr2.dto.AppointmentInfoDto;
+import by.kir.spring_lr2.dto.NewAppointment;
+import by.kir.spring_lr2.dto.ResponseDto;
 import io.swagger.v3.oas.annotations.Hidden;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;

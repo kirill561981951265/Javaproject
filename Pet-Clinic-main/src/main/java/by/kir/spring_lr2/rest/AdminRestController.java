@@ -1,12 +1,12 @@
 package by.kir.spring_lr2.rest;
 
-import by.kir.spring_lr2.aop.LogAnnotation;
-import by.kir.spring_lr2.dto.ResponseDto;
-import by.kir.spring_lr2.dto.UserAdminDto;
 import by.kir.spring_lr2.dto.UserRegistrDto;
 import by.kir.spring_lr2.exceptions.RegistrationException;
 import by.kir.spring_lr2.mapping.UserMapper;
 import by.kir.spring_lr2.service.UserService;
+import by.kir.spring_lr2.aop.LogAnnotation;
+import by.kir.spring_lr2.dto.ResponseDto;
+import by.kir.spring_lr2.dto.UserAdminDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;

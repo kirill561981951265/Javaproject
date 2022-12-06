@@ -1,11 +1,11 @@
 package by.kir.spring_lr2.service;
 
-import by.kir.spring_lr2.dto.AppointmentInfoDto;
-import by.kir.spring_lr2.dto.AppointmentOutDto;
-import by.kir.spring_lr2.dto.NewAppointment;
 import by.kir.spring_lr2.exceptions.AppointmentException;
 import by.kir.spring_lr2.exceptions.PetException;
 import by.kir.spring_lr2.exceptions.UserException;
+import by.kir.spring_lr2.dto.AppointmentInfoDto;
+import by.kir.spring_lr2.dto.AppointmentOutDto;
+import by.kir.spring_lr2.dto.NewAppointment;
 import by.kir.spring_lr2.model.Appointment;
 
 import java.text.ParseException;

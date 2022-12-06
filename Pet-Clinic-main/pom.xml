@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>by.kir</groupId>
+    <groupId>by.tukai</groupId>
     <artifactId>Spring_lr2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Spring_lr2</name>
@@ -129,3 +129,4 @@
     </build>
 
 </project>
+

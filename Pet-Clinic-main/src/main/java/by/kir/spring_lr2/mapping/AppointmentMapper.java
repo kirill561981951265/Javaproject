@@ -1,15 +1,15 @@
 package by.kir.spring_lr2.mapping;
 
+import by.kir.spring_lr2.exceptions.PetException;
+import by.kir.spring_lr2.exceptions.UserException;
+import by.kir.spring_lr2.service.PetService;
+import by.kir.spring_lr2.service.UserService;
 import by.kir.spring_lr2.dto.AppointmentInfoDto;
 import by.kir.spring_lr2.dto.AppointmentOutDto;
 import by.kir.spring_lr2.dto.NewAppointment;
-import by.kir.spring_lr2.exceptions.PetException;
-import by.kir.spring_lr2.exceptions.UserException;
+import by.kir.spring_lr2.model.Appointment;
 import by.kir.spring_lr2.model.Pet;
 import by.kir.spring_lr2.model.User;
-import by.kir.spring_lr2.service.PetService;
-import by.kir.spring_lr2.model.Appointment;
-import by.kir.spring_lr2.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

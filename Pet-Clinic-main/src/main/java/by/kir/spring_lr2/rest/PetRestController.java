@@ -1,14 +1,14 @@
 package by.kir.spring_lr2.rest;
 
+import by.kir.spring_lr2.exceptions.PetException;
+import by.kir.spring_lr2.mapping.PetMapper;
+import by.kir.spring_lr2.repository.PetRep;
+import by.kir.spring_lr2.service.AppointmentService;
+import by.kir.spring_lr2.service.PetService;
 import by.kir.spring_lr2.aop.LogAnnotation;
 import by.kir.spring_lr2.dto.AppointmentOutDto;
 import by.kir.spring_lr2.dto.PetRegistrDto;
 import by.kir.spring_lr2.dto.ResponseDto;
-import by.kir.spring_lr2.exceptions.PetException;
-import by.kir.spring_lr2.repository.PetRep;
-import by.kir.spring_lr2.mapping.PetMapper;
-import by.kir.spring_lr2.service.AppointmentService;
-import by.kir.spring_lr2.service.PetService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;

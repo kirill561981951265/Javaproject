@@ -1,9 +1,9 @@
 package by.kir.spring_lr2.security;
 
-import by.kir.spring_lr2.model.User;
 import by.kir.spring_lr2.security.jwt.JwtUser;
 import by.kir.spring_lr2.security.jwt.JwtUserFactory;
 import by.kir.spring_lr2.service.UserService;
+import by.kir.spring_lr2.model.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UserDetails;

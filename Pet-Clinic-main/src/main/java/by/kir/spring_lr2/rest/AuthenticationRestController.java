@@ -1,12 +1,12 @@
 package by.kir.spring_lr2.rest;
 
-import by.kir.spring_lr2.aop.LogAnnotation;
-import by.kir.spring_lr2.dto.UserAuthDto;
 import by.kir.spring_lr2.exceptions.AuthenticationException;
-import by.kir.spring_lr2.repository.UserRep;
-import by.kir.spring_lr2.dto.TokenResponseDto;
 import by.kir.spring_lr2.model.User;
+import by.kir.spring_lr2.repository.UserRep;
 import by.kir.spring_lr2.security.jwt.TokenProvider;
+import by.kir.spring_lr2.aop.LogAnnotation;
+import by.kir.spring_lr2.dto.TokenResponseDto;
+import by.kir.spring_lr2.dto.UserAuthDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;

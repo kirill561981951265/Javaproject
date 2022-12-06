@@ -1,9 +1,9 @@
 package by.kir.spring_lr2.mapping;
 
 import by.kir.spring_lr2.dto.*;
+import by.kir.spring_lr2.dto.*;
 import by.kir.spring_lr2.model.Role;
 import by.kir.spring_lr2.model.User;
-import by.kir.spring_lr2.dto.*;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

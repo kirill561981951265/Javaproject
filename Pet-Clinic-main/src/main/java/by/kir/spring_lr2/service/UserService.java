@@ -1,10 +1,10 @@
 package by.kir.spring_lr2.service;
 
+import by.kir.spring_lr2.exceptions.RegistrationException;
+import by.kir.spring_lr2.exceptions.UserException;
 import by.kir.spring_lr2.dto.UserAboutDto;
 import by.kir.spring_lr2.dto.UserAdminDto;
 import by.kir.spring_lr2.dto.UserRegistrDto;
-import by.kir.spring_lr2.exceptions.RegistrationException;
-import by.kir.spring_lr2.exceptions.UserException;
 import by.kir.spring_lr2.model.User;
 
 import java.util.List;

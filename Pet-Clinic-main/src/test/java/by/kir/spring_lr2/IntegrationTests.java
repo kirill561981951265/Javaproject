@@ -3,7 +3,7 @@ package by.kir.spring_lr2;
 import by.kir.spring_lr2.model.Role;
 import by.kir.spring_lr2.model.Status;
 import by.kir.spring_lr2.model.User;
-import by.kir.spring_lr2.model.*;
+import by.tukai.spring_lr2.model.*;
 import by.kir.spring_lr2.security.JwtUserDetailsService;
 import by.kir.spring_lr2.security.jwt.JwtTokenProvider;
 import by.kir.spring_lr2.security.jwt.JwtUserFactory;

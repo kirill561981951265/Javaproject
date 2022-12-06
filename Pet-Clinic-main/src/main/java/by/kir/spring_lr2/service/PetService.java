@@ -1,8 +1,8 @@
 package by.kir.spring_lr2.service;
 
+import by.kir.spring_lr2.exceptions.PetException;
 import by.kir.spring_lr2.dto.PetOutDto;
 import by.kir.spring_lr2.dto.PetRegistrDto;
-import by.kir.spring_lr2.exceptions.PetException;
 import by.kir.spring_lr2.model.Pet;
 import by.kir.spring_lr2.model.User;
 

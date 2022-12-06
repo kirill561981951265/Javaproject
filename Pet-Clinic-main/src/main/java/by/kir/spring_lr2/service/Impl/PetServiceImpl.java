@@ -1,5 +1,6 @@
 package by.kir.spring_lr2.service.Impl;
 
+import by.kir.spring_lr2.repository.UserRep;
 import by.kir.spring_lr2.dto.PetOutDto;
 import by.kir.spring_lr2.dto.PetRegistrDto;
 import by.kir.spring_lr2.exceptions.PetException;
@@ -9,7 +10,6 @@ import by.kir.spring_lr2.model.Pet;
 import by.kir.spring_lr2.model.Status;
 import by.kir.spring_lr2.model.User;
 import by.kir.spring_lr2.repository.PetRep;
-import by.kir.spring_lr2.repository.UserRep;
 import by.kir.spring_lr2.service.PetService;
 import by.kir.spring_lr2.service.UserService;
 import lombok.extern.slf4j.Slf4j;

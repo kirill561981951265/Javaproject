@@ -1,10 +1,10 @@
 package by.kir.spring_lr2;
 
-import by.kir.spring_lr2.repository.RoleRep;
-import by.kir.spring_lr2.repository.UserRep;
 import by.kir.spring_lr2.dto.UserAdminDto;
 import by.kir.spring_lr2.model.Role;
 import by.kir.spring_lr2.model.User;
+import by.kir.spring_lr2.repository.RoleRep;
+import by.kir.spring_lr2.repository.UserRep;
 import by.kir.spring_lr2.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
